@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <table class="table">
+                <thead>
+                  <tr>
+
+                    <th scope="col">vehicleNo</th>
+                    <th scope="col">ownerName</th>
+                    <th scope="col">PhoneNo</th>
+                    <th scope="col">emailid</th>
+                    <th scope="col">pincode</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of ViewAll">
+                    <th scope="row">{{i.vehicleNo}}</th>
+                    <td>{{i.ownerName}}</td>
+                    <td>{{i.phoneno}}</td>
+                    <td>{{i.emailid}}</td>
+                    <td>{{i.pincode}}</td>
+
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+
+        </div>
+    </div>
+</div>
